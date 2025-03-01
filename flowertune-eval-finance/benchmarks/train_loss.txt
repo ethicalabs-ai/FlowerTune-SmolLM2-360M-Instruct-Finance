@@ -1,10 +1,10 @@
 INFO :      aggregate_fit: received 5 results and 0 failures
-INFO :      Communication budget: used 11005.66 MB (+458.57 MB this round) / 200,000 MB
-INFO :      fit progress: (12, 0.0, {}, 1398.747323268999)
+INFO :      Communication budget: used 10086.56 MB (+210.14 MB this round) / 200,000 MB
+INFO :      fit progress: (24, 0.0, {}, 1500.6624058390153)
 INFO :      configure_evaluate: no clients selected, skipping evaluation
 INFO :
 INFO :      [SUMMARY]
-INFO :      Run finished 12 round(s) in 1398.75s
+INFO :      Run finished 24 round(s) in 1500.66s
 INFO :          History (loss, centralized):
 INFO :                  round 0: 0.0
 INFO :                  round 1: 0.0
@@ -19,16 +19,40 @@ INFO :                  round 9: 0.0
 INFO :                  round 10: 0.0
 INFO :                  round 11: 0.0
 INFO :                  round 12: 0.0
+INFO :                  round 13: 0.0
+INFO :                  round 14: 0.0
+INFO :                  round 15: 0.0
+INFO :                  round 16: 0.0
+INFO :                  round 17: 0.0
+INFO :                  round 18: 0.0
+INFO :                  round 19: 0.0
+INFO :                  round 20: 0.0
+INFO :                  round 21: 0.0
+INFO :                  round 22: 0.0
+INFO :                  round 23: 0.0
+INFO :                  round 24: 0.0
 INFO :          History (metrics, distributed, fit):
-INFO :          {'train_loss': [(1, 2.6327445405887406),
-INFO :                          (2, 1.0848054366313156),
-INFO :                          (3, 0.8804269069789971),
-INFO :                          (4, 0.7435413071191246),
-INFO :                          (5, 0.693316543193589),
-INFO :                          (6, 0.7106218897771894),
-INFO :                          (7, 0.6035920894371511),
-INFO :                          (8, 0.5495804635359255),
-INFO :                          (9, 0.5735140468645769),
-INFO :                          (10, 0.5695538207888603),
-INFO :                          (11, 0.5665491033650606),
-INFO :                          (12, 0.5657492258264225)]}
+INFO :          {'train_loss': [(1, 6.1763791319164305),
+INFO :                          (2, 1.2002685467605947),
+INFO :                          (3, 1.0963874512217513),
+INFO :                          (4, 0.9859386205253959),
+INFO :                          (5, 0.9498322918073728),
+INFO :                          (6, 0.9629700211165209),
+INFO :                          (7, 0.835341811716735),
+INFO :                          (8, 0.8008729660857099),
+INFO :                          (9, 0.7657838573421416),
+INFO :                          (10, 0.6883851593271006),
+INFO :                          (11, 0.6634150415899637),
+INFO :                          (12, 0.7195878981698633),
+INFO :                          (13, 0.6392149897908609),
+INFO :                          (14, 0.6546718452492591),
+INFO :                          (15, 0.6180202885239692),
+INFO :                          (16, 0.5544578907920332),
+INFO :                          (17, 0.6175053925627144),
+INFO :                          (18, 0.5977840785603795),
+INFO :                          (19, 0.531246993898175),
+INFO :                          (20, 0.5581228735978737),
+INFO :                          (21, 0.54444180093662),
+INFO :                          (22, 0.5176843873277567),
+INFO :                          (23, 0.5421773051687523),
+INFO :                          (24, 0.5473971706192807)]}
