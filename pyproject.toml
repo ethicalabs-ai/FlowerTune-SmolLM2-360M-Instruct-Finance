@@ -32,7 +32,7 @@ serverapp = "flowertune_finance.server_app:app"
 clientapp = "flowertune_finance.client_app:app"
 
 [tool.flwr.app.config]
-model.name = "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+model.name = "HuggingFaceTB/SmolLM2-360M-Instruct"
 model.quantization = 4
 model.gradient-checkpointing = true
 model.lora.peft-lora-r = 32
