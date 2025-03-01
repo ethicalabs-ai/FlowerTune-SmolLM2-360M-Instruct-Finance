@@ -1,6 +1,6 @@
 # FlowerTune LLM on Finance Dataset
 
-This directory conducts federated instruction tuning with a pretrained [SmolLM2-1.7B-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct) model on a [Finance dataset](https://huggingface.co/datasets/FinGPT/fingpt-sentiment-train).
+This directory conducts federated instruction tuning with a pretrained [SmolLM2-360M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct) model on a [Finance dataset](https://huggingface.co/datasets/FinGPT/fingpt-sentiment-train).
 We use [Flower Datasets](https://flower.dev/docs/datasets/) to download, partition and preprocess the dataset.
 Flower's Simulation Engine is used to simulate the LLM fine-tuning process in federated way,
 which allows users to perform the training on a single GPU.
@@ -9,7 +9,7 @@ which allows users to perform the training on a single GPU.
 
 The fine-tuning results have been submitted as a PEFT adapter and can be accessed here:
 
-[https://huggingface.co/mrs83/FlowerTune-SmolLM2-1.7B-Instruct-Finance-PEFT](https://huggingface.co/ethicalabs/FlowerTune-SmolLM2-1.7B-Instruct-Finance-PEFT)
+[https://huggingface.co/ethicalabs/FlowerTune-SmolLM2-360M-Instruct-Finance-PEFT](https://huggingface.co/ethicalabs/FlowerTune-SmolLM2-360M-Instruct-Finance-PEFT)
 
 ## Methodology
 
@@ -19,7 +19,7 @@ The clients' models are aggregated with `FedAvg` strategy.
 
 ### SmolLM2-1.7B-Instruct
 
-For the **HuggingFaceTB/SmolLM2-1.7B-Instruct** model I adopted the following fine-tuning methodology:
+For the **HuggingFaceTB/SmolLM2-360M-Instruct** model I adopted the following fine-tuning methodology:
 
 - **Precision**: `bf16` for model weights.
 - **Quantization**: `4-bit` quantization for reduced memory usage.
@@ -34,7 +34,7 @@ For the **HuggingFaceTB/SmolLM2-1.7B-Instruct** model I adopted the following fi
 - **Training Configuration**:
   - Batch size: `16`
   - Maximum number of steps: `8`
-  - Total number of rounds: `12`
+  - Total number of rounds: `24`
   - Fraction fit per round: `0.1`
 - **Learning Rate Scheduler**:
   - Cosine Annealing over rounds, where:
@@ -51,62 +51,16 @@ Below is the training loss plot from the experiment:
 
 ### Evaluation Results (Accuracy)
 
-- **FiQA**: 56.58 %  
-- **FPB**: 71.37 %  
-- **TFNS**: 75.75 %  
-- **Average**: 67.90 %
+- **FiQA**: n/a %  
+- **FPB**: n/a %  
+- **TFNS**: n/a %  
+- **Average**: n/a %
 
-The evaluation was conducted on an RTX A4000 16GB.
+The evaluation was conducted on an ...
 
 ### Communication Budget
 
-11005.66 MB
-
-### Virtual Machine Details
-
-For this experiment, I utilized [CUDO Compute](https://www.cudocompute.com/?via=flowertune-llm) as the GPU compute provider.
-
-| **Component** | **Specification**    |
-|---------------|----------------------|
-| **GPU**       | 1 × RTX A4000 16 GB  |
-| **vCPUs**     | 4                    |
-| **CPU**       | AMD EPYC (Milan)     |
-| **Memory**    | 16 GB                |
-
-### Cost Breakdown
-
-#### Compute Costs
-
-| **Component** | **Details**   | **Cost/hr** |
-|---------------|---------------|-------------|
-| vCPUs         | 4 cores       | $0.0088/hr  |
-| Memory        | 16 GB         | $0.056/hr   |
-| GPU           | 1 × RTX A4000  | $0.25/hr    |
-
-#### Storage Costs
-
-| **Component**    | **Details** | **Cost/hr** |
-|------------------|-------------|-------------|
-| Boot Disk Size   | 70 GB       | $0.0077/hr  |
-
-#### Network Costs
-
-| **Component**         | **Details** | **Cost/hr** |
-|-----------------------|-------------|-------------|
-| Public IPv4 Address   | N/A         | $0.005/hr   |
-
-#### Total Cost
-
-| **Total Cost/hr** |
-|-------------------|
-| **$0.3275/hr**    |
-
-#### Simulation Details
-
-| **Parameter**      | **Value**              |
-|--------------------|------------------------|
-| **Runtime**        | 1924.52 seconds (00:23:18) |
-| **Simulation Cost**| **$0.1273**              |
+n/a MB
 
 ## Environments setup
 
