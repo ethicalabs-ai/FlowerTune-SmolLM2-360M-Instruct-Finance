@@ -17,7 +17,7 @@ This experiment performs federated LLM fine-tuning with [DoRA](https://arxiv.org
 The clients' models are aggregated with `FedAvg` strategy.
 
 
-### SmolLM2-1.7B-Instruct
+### SmolLM2-360M-Instruct
 
 For the **HuggingFaceTB/SmolLM2-360M-Instruct** model I adopted the following fine-tuning methodology:
 
