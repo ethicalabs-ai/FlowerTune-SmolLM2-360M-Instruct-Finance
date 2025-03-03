@@ -56,7 +56,7 @@ Below is the training loss plot from the experiment:
 - **TFNS**: 25.25 %
 - **Average**: 45.36 %
 
-The evaluation was conducted on an ...
+The evaluation was conducted on an NVIDIA A40
 
 ### Communication Budget
 
