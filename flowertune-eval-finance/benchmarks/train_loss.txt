@@ -1,34 +1,46 @@
 INFO :      aggregate_fit: received 5 results and 0 failures
-INFO :      Communication budget: used 11005.66 MB (+458.57 MB this round) / 200,000 MB
-INFO :      fit progress: (12, 0.0, {}, 1398.747323268999)
+INFO :      Communication budget: used 3852.42 MB (+107.01 MB this round) / 200,000 MB
+INFO :      fit progress: (18, 0.0, {}, 798.3668184929993)
 INFO :      configure_evaluate: no clients selected, skipping evaluation
 INFO :
 INFO :      [SUMMARY]
-INFO :      Run finished 12 round(s) in 1398.75s
-INFO :          History (loss, centralized):
-INFO :                  round 0: 0.0
-INFO :                  round 1: 0.0
-INFO :                  round 2: 0.0
-INFO :                  round 3: 0.0
-INFO :                  round 4: 0.0
-INFO :                  round 5: 0.0
-INFO :                  round 6: 0.0
-INFO :                  round 7: 0.0
-INFO :                  round 8: 0.0
-INFO :                  round 9: 0.0
-INFO :                  round 10: 0.0
-INFO :                  round 11: 0.0
-INFO :                  round 12: 0.0
-INFO :          History (metrics, distributed, fit):
-INFO :          {'train_loss': [(1, 2.6327445405887406),
-INFO :                          (2, 1.0848054366313156),
-INFO :                          (3, 0.8804269069789971),
-INFO :                          (4, 0.7435413071191246),
-INFO :                          (5, 0.693316543193589),
-INFO :                          (6, 0.7106218897771894),
-INFO :                          (7, 0.6035920894371511),
-INFO :                          (8, 0.5495804635359255),
-INFO :                          (9, 0.5735140468645769),
-INFO :                          (10, 0.5695538207888603),
-INFO :                          (11, 0.5665491033650606),
-INFO :                          (12, 0.5657492258264225)]}
+INFO :      Run finished 18 round(s) in 798.37s
+INFO :      	History (loss, centralized):
+INFO :      		round 0: 0.0
+INFO :      		round 1: 0.0
+INFO :      		round 2: 0.0
+INFO :      		round 3: 0.0
+INFO :      		round 4: 0.0
+INFO :      		round 5: 0.0
+INFO :      		round 6: 0.0
+INFO :      		round 7: 0.0
+INFO :      		round 8: 0.0
+INFO :      		round 9: 0.0
+INFO :      		round 10: 0.0
+INFO :      		round 11: 0.0
+INFO :      		round 12: 0.0
+INFO :      		round 13: 0.0
+INFO :      		round 14: 0.0
+INFO :      		round 15: 0.0
+INFO :      		round 16: 0.0
+INFO :      		round 17: 0.0
+INFO :      		round 18: 0.0
+INFO :      	History (metrics, distributed, fit):
+INFO :      	{'train_loss': [(1, 6.189702897460457),
+INFO :      	                (2, 1.285255963667709),
+INFO :      	                (3, 1.1355912774801253),
+INFO :      	                (4, 1.000097180246119),
+INFO :      	                (5, 0.9491658989294939),
+INFO :      	                (6, 0.8454515944889269),
+INFO :      	                (7, 0.7792030012175837),
+INFO :      	                (8, 0.8017079039216353),
+INFO :      	                (9, 0.6803224944010119),
+INFO :      	                (10, 0.6935263045132161),
+INFO :      	                (11, 0.6785198166579206),
+INFO :      	                (12, 0.6479429682422906),
+INFO :      	                (13, 0.6206873462495645),
+INFO :      	                (14, 0.5936499496955137),
+INFO :      	                (15, 0.6552980441154563),
+INFO :      	                (16, 0.6026807436180835),
+INFO :      	                (17, 0.5880643689287348),
+INFO :      	                (18, 0.6299169583036455)]}
