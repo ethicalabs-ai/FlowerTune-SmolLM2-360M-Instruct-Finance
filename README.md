@@ -34,7 +34,7 @@ For the **HuggingFaceTB/SmolLM2-360M-Instruct** model I adopted the following fi
 - **Training Configuration**:
   - Batch size: `16`
   - Maximum number of steps: `8`
-  - Total number of rounds: `24`
+  - Total number of rounds: `18`
   - Fraction fit per round: `0.1`
 - **Learning Rate Scheduler**:
   - Cosine Annealing over rounds, where:
