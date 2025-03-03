@@ -25,7 +25,7 @@ For the **HuggingFaceTB/SmolLM2-360M-Instruct** model I adopted the following fi
 - **Quantization**: `4-bit` quantization for reduced memory usage.
 - **Optimizer**: `paged_adamw_8bit`
 - **[DoRA](https://arxiv.org/abs/2402.09353) Configuration**:
-  - Rank (r): `32`
+  - Rank (r): `16`
   - Alpha: `64`
   - Target Modules:
     - `down_proj`
@@ -51,16 +51,16 @@ Below is the training loss plot from the experiment:
 
 ### Evaluation Results (Accuracy)
 
-- **FiQA**: n/a %  
-- **FPB**: n/a %  
-- **TFNS**: n/a %  
-- **Average**: n/a %
+- **FiQA**: 69.08 %
+- **FPB**: 41.75 %
+- **TFNS**: 25.25 %
+- **Average**: 45.36 %
 
 The evaluation was conducted on an ...
 
 ### Communication Budget
 
-n/a MB
+3852.42 MB
 
 ## Environments setup
 
